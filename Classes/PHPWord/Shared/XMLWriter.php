@@ -114,10 +114,10 @@ class PHPWord_Shared_XMLWriter
     public function getData()
     {
         if ($this->_tempFileName == '') {
-            return $this->_xmlWriter->outputMemory(true);
+            return trim(preg_replace('/>\s+</', '><', $this->_xmlWriter->outputMemory(true)));
         } else {
             $this->_xmlWriter->flush();
-            return file_get_contents($this->_tempFileName);
+            return trim(preg_replace('/>\s+</', '><', file_get_contents($this->_tempFileName)));
         }
     }
 
