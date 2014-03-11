@@ -1,5 +1,5 @@
 {
-    "name": "phpoffice/phpword",
+    "name": "ephpoffice/phpword",
     "description": "PHPWord - Read, Create and Write Word documents in PHP",
     "keywords": ["PHP", "Word", "Writer", "docx", "doc", "rtf"],
     "homepage": "http://phpoffice.github.io",
@@ -17,6 +17,9 @@
         {
             "name": "Franck Lefevre",
             "homepage": "http://blog.rootslabs.net"
+        },
+        {
+            "name": "Ephraim Pepe"
         }
     ],
     "require": {
